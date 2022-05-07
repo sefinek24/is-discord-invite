@@ -14,7 +14,8 @@
     "url",
     "is",
     "discord",
-    "invite"
+    "invite",
+    "invitation"
   ],
   "author": "Sefinek",
   "license": "MIT",
