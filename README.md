@@ -1,6 +1,6 @@
 ## ⭐ What is that?
-`EN:` This package will check that the URL is an invitation to the Discord server.  
-`PL:` Ten moduł sprawdzi, czy adres URL jest zaproszeniem na serwer Discord.
+**EN:** This package will check that the URL is an invitation to the Discord server.  
+**PL:** Ten moduł sprawdzi, czy adres URL jest zaproszeniem na serwer Discord.
 
 ## 📝 Examples
 ```js
