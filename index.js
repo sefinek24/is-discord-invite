@@ -1,0 +1,1 @@
+module.exports = str => (/discord\.(?:com\/invite|gg)/gim).test(str);
