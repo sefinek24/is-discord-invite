@@ -3,7 +3,7 @@
 **PL:** Ten moduł sprawdzi, czy adres URL jest zaproszeniem na serwer Discord.
 
 ## ✨ How to install?
-> $ npm install is-discord-invite
+> **$** npm install is-discord-invite
 
 ## 📝 Examples
 ```js
