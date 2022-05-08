@@ -2,7 +2,7 @@ const isInvite = require('../index.js');
 
 const urls = [
 	'https://discord.gg/example',
-	'https://discord.gg/7548215',
+	'https://disCOrd.gg/7548215',
 	'http://discord.gg/5213567',
 	'https://discord.com/invite/6246848',
 	'https://discordapp.com/invite/9567935',
