@@ -1,6 +1,5 @@
-# ⭐ » What is that?
-
 <div align="center">
+    <h2>⭐ » What is that?</h2>
     <p>
         <b>EN:</b> This package will check that the URL is an invitation to the Discord server.<br>
         <b>PL:</b> Ten moduł sprawdzi, czy adres URL jest zaproszeniem na serwer Discord.
