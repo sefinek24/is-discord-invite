@@ -21,7 +21,7 @@ const urls = [
 	'https://www.npmjs.com',
 	'https://nodejs.org/en',
 
-	'Yes... This is a useless string. 🐱',
+	'Hello world! 🐱',
 ];
 
 for (let i = 0; i < urls.length; i++) {
