@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/tokei/lines/github/sefinek24/is-discord-invite" alt="Total lines">
 </div>
 
-## 📥 » How to install this package?
+## 📥 » Installation
 > **$** npm install is-discord-invite
 
 ## 📝 » Examples
