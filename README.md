@@ -1,8 +1,8 @@
 <div align="center">
     <h1>🌍・What is that?・🌍</h1>
     <p>
-        <b>EN:</b> This package will check that the URL is an invitation to the Discord server.<br>
-        <b>PL:</b> Ten moduł sprawdzi, czy adres URL jest zaproszeniem na serwer Discord.
+        <b>EN:</b> This npm package will check a string is an invitation to the Discord server.<br>
+        <b>PL:</b> Ten moduł npm sprawdzi, czy ciąg znaków jest zaproszeniem na jakikolwiek serwer Discord.
     </p>
     <img src="https://img.shields.io/npm/dt/is-discord-invite.svg?maxAge=3600" alt="npm downloads">
     <img src="https://img.shields.io/github/issues/sefinek24/is-discord-invite" alt="Issues">
