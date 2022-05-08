@@ -14,7 +14,7 @@ console.log(isInvite('https://example.com')); // false
 ```
 
 ```js
-// For Discord.js
+// For Discord.js - https://www.npmjs.com/package/discord.js
 const url = 'https://discord.gg/example064';
 
 if (isDscInvite(url)) {
