@@ -4,7 +4,7 @@
         <b>EN:</b> This npm package will check a string is an invitation to the Discord server.<br>
         <b>PL:</b> Ten moduł npm sprawdzi, czy ciąg znaków jest zaproszeniem na jakikolwiek serwer Discord.
     </p>
-    <a href="https://www.npmjs.com/package/is-discord-invite" target="_blank" title="is-discord-invite - npm">
+    <a href="https://www.npmjs.com/package/is-discord-invite" target="_blank" title="is-discord-invite - npm" style="text-decoration:none">
         <img src="https://img.shields.io/npm/dt/is-discord-invite.svg?maxAge=3600" alt="npm downloads">
         <img src="https://img.shields.io/github/issues/sefinek24/is-discord-invite" alt="Issues">
         <img src="https://img.shields.io/github/last-commit/sefinek24/is-discord-invite" alt="Last commit">
