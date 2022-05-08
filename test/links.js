@@ -6,9 +6,10 @@ const urls = [
 	'http://discord.gg/5213567',
 	'https://discord.com/invite/6246848',
 	'https://discordapp.com/invite/9567935',
-	'https://discord.me/server/join/direct/example',
+
 	'https://disboard.org/server/join/000000000000000000',
 	'https://disboard.org/pl/server/join/000000000000000000',
+	'https://discord.me/server/join/direct/example',
 
 	'https://example.com',
 	'https://wikipedia.org',

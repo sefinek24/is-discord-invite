@@ -4,7 +4,7 @@
   "description": "Checking if the URL is a Discord invite.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/links.js"
   },
   "repository": {
     "type": "git",
