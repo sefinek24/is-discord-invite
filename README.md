@@ -1,8 +1,10 @@
 ## ⭐ » What is that?
-**EN:** This package will check that the URL is an invitation to the Discord server.  
-**PL:** Ten moduł sprawdzi, czy adres URL jest zaproszeniem na serwer Discord.
 
 <div align="center">
+    <p>
+        <b>EN:</b> This package will check that the URL is an invitation to the Discord server.<br>
+        <b>PL:</b> Ten moduł sprawdzi, czy adres URL jest zaproszeniem na serwer Discord.
+    </p>
     <img src="https://img.shields.io/npm/dt/is-discord-invite.svg?maxAge=3600" alt="npm downloads">
     <img src="https://img.shields.io/github/issues/sefinek24/is-discord-invite" alt="Issues">
     <img src="https://img.shields.io/github/last-commit/sefinek24/is-discord-invite" alt="Last commit">
