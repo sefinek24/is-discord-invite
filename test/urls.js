@@ -1,8 +1,8 @@
-const isInvite = require('../index.js');
+const isInvite = require('../');
 
 const urls = [
 	'https://discord.gg/example',
-	'https://disCOrd.gg/7548215',
+	'https://diSCOrd.gg/7548215',
 	'http://discord.gg/5213567',
 	'https://discord.com/invite/6246848',
 	'https://discordapp.com/invite/9567935',
@@ -12,14 +12,9 @@ const urls = [
 	'https://discord.me/server/join/direct/example',
 
 	'https://example.com',
-	'https://wikipedia.org',
 	'https://google.com',
-	'https://github.com/sefinek24',
-	'https://github.com/nodejs/node',
 	'https://github.com/sefinek24/is-discord-invite',
-	'https://www.youtube.com',
 	'https://www.npmjs.com',
-	'https://nodejs.org/en',
 
 	'Hello world! 🐱',
 ];

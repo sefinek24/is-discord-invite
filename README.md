@@ -21,8 +21,8 @@
 ```js
 const isInvite = require('is-discord-invite');
 
-console.log(isInvite('https://discord.gg/example024')); // true
-console.log(isInvite('https://example.com')); // false
+isInvite('https://discord.gg/example024'); // true
+isInvite('https://example.com'); // false
 ```
 
 ```js
@@ -37,9 +37,10 @@ if (isDscInvite(url)) {
 ```
 
 ## 📝 » Changelog
-> <a href="https://github.com/sefinek24/is-discord-invite/blob/main/CHANGELOG.md" target="_blank">https://github.com/sefinek24/is-discord-invite/blob/main/CHANGELOG.md</a>
+> https://github.com/sefinek24/is-discord-invite/blob/main/CHANGELOG.md
 
 ## 🤝 » Help
-Open new <a href="https://github.com/sefinek24/is-discord-invite/issues/new" target="_blank">Issue</a> on GitHub.
+Open new [Issue](https://github.com/sefinek24/is-discord-invite/issues/new) on GitHub.
 
-### Thank you ❤️
+## ⭐ » Thank you
+Give a star if you can on [GitHub](https://github.com/sefinek24/is-discord-invite) page.

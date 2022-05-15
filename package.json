@@ -1,10 +1,10 @@
 {
   "name": "is-discord-invite",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Checking if the URL is a Discord invite.",
   "main": "index.js",
   "scripts": {
-    "test": "node test/links.js"
+    "test": "node test/urls.js"
   },
   "repository": {
     "type": "git",
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "url",
+    "link",
     "is",
     "discord",
     "invite",
