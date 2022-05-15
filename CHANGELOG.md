@@ -1,6 +1,6 @@
 ## 📥・Version v1.0.3
 1. Added new tag in **package.json**.
-2. Other changes.
+2. Module size has been reduced.
 
 ## 📥・Version v1.0.2
 1. Fixed error "no data was given in the function".
