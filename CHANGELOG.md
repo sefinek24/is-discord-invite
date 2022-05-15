@@ -1,4 +1,4 @@
-## 📥・Version v1.0.3
+## 📥・Version v1.0.4
 1. Added new tag in **package.json**.
 2. Module size has been reduced.
 
