@@ -40,6 +40,6 @@ if (isDscInvite(url)) {
 > <a href="https://github.com/sefinek24/is-discord-invite/blob/main/CHANGELOG.md" target="_blank">https://github.com/sefinek24/is-discord-invite/blob/main/CHANGELOG.md</a>
 
 ## 🤝 » Help
-Open new <a href="https://github.com/sefinek24/is-discord-invite/issues/new" target="_blank">Issue</a> on Github.
+Open new <a href="https://github.com/sefinek24/is-discord-invite/issues/new" target="_blank">Issue</a> on GitHub.
 
 ### Thank you ❤️
