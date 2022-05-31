@@ -26,7 +26,7 @@ isInvite('https://example.com'); // false
 
 ```js
 // For Discord.js - https://www.npmjs.com/package/discord.js
-const url = 'https://discord.gg/example064';
+const url = 'https://discord.gg/wzDsKJZunN';
 
 if (isDscInvite(url)) {
     interaction.reply('\\✅ This is an invitation!');
