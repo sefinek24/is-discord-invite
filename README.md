@@ -20,8 +20,8 @@
 ```js
 const isInvite = require('is-discord-invite');
 
-isInvite('https://discord.gg/example024'); // true
-isInvite('https://example.com'); // false
+isInvite('https://discord.gg/aYxK7kHk1z'); // true
+isInvite('https://sefinek.fun'); // false
 ```
 
 ```js
