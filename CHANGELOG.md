@@ -1,4 +1,7 @@
 ## 📥・Version v1.0.4
+1. See [here](https://github.com/sefinek24/is-discord-invite/compare/v1.0.4...v1.0.5). 
+
+## 📥・Version v1.0.4
 1. Added new tag in **package.json**.
 2. Module size has been reduced.
 
