@@ -16,7 +16,7 @@
 ## 📥 » Installation
 > **$** npm install is-discord-invite
 
-## ✅ » Examples
+## 📄 » Examples
 ```js
 const isInvite = require('is-discord-invite');
 
