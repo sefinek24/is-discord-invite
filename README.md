@@ -28,7 +28,7 @@ isInvite('https://sefinek.fun'); // false
 // For Discord.js - https://www.npmjs.com/package/discord.js
 const url = 'https://discord.gg/wzDsKJZunN';
 
-if (isDscInvite(url)) {
+if (isInvite(url)) {
     interaction.reply('\\✅ This is an invitation!');
 } else {
     interaction.reply('\\❎ This is not an invitation.');
