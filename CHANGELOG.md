@@ -1,3 +1,6 @@
+## 📥・Version v1.0.6
+1. Added typings.
+
 ## 📥・Version v1.0.5
 1. See [here](https://github.com/sefinek24/is-discord-invite/compare/v1.0.4...v1.0.5). 
 
