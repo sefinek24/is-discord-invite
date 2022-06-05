@@ -1,0 +1,1 @@
+export default function isInvite(url: String): Boolean
