@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/sefinek24/is-discord-invite#readme",
   "devDependencies": {
-    "jest": "^28.1.0"
+    "jest": "^28.1.2"
   },
   "types": "./index.d.ts"
 }
