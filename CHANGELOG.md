@@ -1,3 +1,6 @@
+## 📥・Version v1.0.7
+1. See [here](https://github.com/sefinek24/is-discord-invite/compare/v1.0.6...v1.0.7).
+
 ## 📥・Version v1.0.6
 1. Added typings.
 
@@ -15,6 +18,3 @@
 1. Better anti-invite system.  
 2. Added **CHANGELOG.md** file.  
 3. Added new test file `test/links.js`.
-
-## 📥・Version v0.1.0
-First release.
