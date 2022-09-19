@@ -31,9 +31,9 @@ isInvite('https://sefinek.fun'); // false
 const url = 'https://discord.gg/wzDsKJZunN';
 
 if (isInvite(url)) {
-    interaction.reply('\\✅ This is an invitation!');
+    interaction.reply('✅ This is an invitation!');
 } else {
-    interaction.reply('\\❎ This is not an invitation.');
+    interaction.reply('❎ This is not an invitation.');
 }
 ```
 
