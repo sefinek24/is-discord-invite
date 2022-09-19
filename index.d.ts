@@ -1,1 +1,1 @@
-export default function isInvite(url: String): Boolean
+export default function isInvite(url: string): boolean;
