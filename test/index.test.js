@@ -22,7 +22,7 @@ const validUrl = [
 const randomUrl = [
 	'https://example.com',
 	'https://discord.com',
-	'https://sefinek.fun',
+	'https://sefinek.net',
 	'https://www.npmjs.com',
 	'https://github.com/sefinek24/is-discord-invite',
 ];

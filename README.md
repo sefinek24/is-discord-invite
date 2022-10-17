@@ -17,7 +17,7 @@
 > **$** npm install is-discord-invite
 
 ## 🤔 » Explanation
-<img src="https://sefinek.fun/images/is-discord-invite.png" alt="Regex visualizer">
+<img src="https://sefinek.net/images/is-discord-invite.png" alt="Regex visualizer">
 
 ## 📄 » Examples
 ```js
@@ -25,7 +25,7 @@ const isInvite = require('is-discord-invite');
 
 // Example 1
 isInvite('https://discord.gg/aYxK7kHk1z'); // true
-isInvite('https://sefinek.fun'); // false
+isInvite('https://sefinek.net'); // false
 
 // Example 2 for Discord.js: https://www.npmjs.com/package/discord.js
 const url = 'https://discord.gg/wzDsKJZunN';
@@ -36,9 +36,6 @@ if (isInvite(url)) {
     interaction.reply('❎ This is not an invitation.');
 }
 ```
-
-## 📝 » Changelog
-> https://github.com/sefinek24/is-discord-invite/blob/main/CHANGELOG.md
 
 ## 🤝 » Help
 Open new [Issue](https://github.com/sefinek24/is-discord-invite/issues/new) on GitHub.

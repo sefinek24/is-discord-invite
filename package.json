@@ -1,6 +1,6 @@
 {
   "name": "is-discord-invite",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Checking if the URL is a Discord invite.",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/sefinek24/is-discord-invite#readme",
   "devDependencies": {
-    "jest": "^29.0.3"
+    "jest": "^29.2.0"
   },
   "types": "./index.d.ts"
 }
