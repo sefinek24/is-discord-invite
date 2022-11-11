@@ -3,16 +3,18 @@ const isInvite = require('../');
 const validUrl = [
 	'https://discord.gg/example',
 	'discord.gg/example',
-	'https://diSCOrd.gg/7548215',
-	'http://discord.gg/JpAGQkhV',
+	'https://diSCOrd.gg/VqdtyNjS',
+	'http://discord.gg/DzRYkCR4',
 	'https://discord.com/invite/6246848',
-	'https://discordapp.com/invite/9567935',
-	'www.discord.gg/9567935',
+	'https://discordapp.com/invite/nbnhkaDL',
+	'www.discord.gg/yQYb6WYS',
+	'https://watchanimeattheoffice.com/invite/Df6KJWvU',
 
 	// Disboard.org
 	'https://disboard.org/server/join/000000000000000000',
 	'https://disboard.org/en/server/join/000000000000000000',
 	'https://disboard.org/pl/server/join/000000000000000000',
+	'some text 1 2 3 https://disboard.org/pl/server/join/000000000000000000 3213 1 some text',
 
 	// Other links
 	'https://discord.me/server/join/direct/example',
