@@ -1,1 +1,1 @@
-module.exports = str => (/(?:watchanimeattheoffice\.com\/invite|(?:(?:dis(?:board\.org\/(?:(?:en\/)?|pl\/)server\/join|cord(?:\.me\/server\/join|(?:home\.com\/join|\.gg)))|discord\.com\/invite)|discordapp\.com\/invite))\//gi).test(str);
+module.exports = str => (/(?:watchanimeattheoffice\.com\/invite|discordsays\.com\/invite|(?:(?:dis(?:board\.org\/(?:(?:en\/)?|pl\/)server\/join|cord(?:\.me\/server\/join|(?:home\.com\/join|\.gg)))|discord\.com\/invite)|discordapp\.com\/invite))\//gi).test(str);
