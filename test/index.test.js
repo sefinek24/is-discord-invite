@@ -9,6 +9,7 @@ const validUrl = [
 	'https://discordapp.com/invite/nbnhkaDL',
 	'www.discord.gg/yQYb6WYS',
 	'https://watchanimeattheoffice.com/invite/Df6KJWvU',
+	'https://discordsays.com/invite/TvaKnzsxC6',
 
 	// Disboard.org
 	'https://disboard.org/server/join/000000000000000000',
