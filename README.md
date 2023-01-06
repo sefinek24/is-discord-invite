@@ -46,4 +46,4 @@ if (isInvite(url)) {
 Open new [Issue](https://github.com/sefinek24/is-discord-invite/issues/new) on GitHub.
 
 ## ⭐ » Thank you
-Give a star if you can on [GitHub](https://github.com/sefinek24/is-discord-invite) page.
+Star the [repo](https://github.com/sefinek24/is-discord-invite) if you liked it!
