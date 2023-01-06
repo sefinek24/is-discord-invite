@@ -21,13 +21,18 @@
 
 ## 📄 » Examples
 ```js
+// Example 1
+
 const isInvite = require('is-discord-invite');
 
-// Example 1
 isInvite('https://discord.gg/BAtT5MZJ'); // true
 isInvite('https://sefinek.net'); // false
+```
 
-// Example 2 for Discord.js: https://www.npmjs.com/package/discord.js
+```
+// Example 2 for Discord.js - https://www.npmjs.com/package/discord.js
+
+const isInvite = require('is-discord-invite');
 const url = 'https://discord.gg/h9Y6FjUR';
 
 if (isInvite(url)) {
