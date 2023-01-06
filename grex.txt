@@ -1,0 +1,1 @@
+grex "discord.gg/" "discord.com/invite/" "watchanimeattheoffice.com/invite/" "discordsays.com/invite/" "discordapp.com/invite/" "disboard.org/server/join/" "disboard.org/en/server/join/" "disboard.org/pl/server/join/" "discordhome.com/join/" "discord.me/server/join/"
