@@ -29,7 +29,7 @@ isInvite('https://discord.gg/BAtT5MZJ'); // true
 isInvite('https://sefinek.net'); // false
 ```
 
-```
+```js
 // Example 2 for Discord.js - https://www.npmjs.com/package/discord.js
 
 const isInvite = require('is-discord-invite');
