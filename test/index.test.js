@@ -14,7 +14,7 @@ describe('#isDiscordInviteLink', () => {
 		});
 
 		test('Valid Discord.gg link 3', () => {
-			const url = 'foo exampple 123123 https://discord.gg/WNdbZDJm computer cat UwU :DDDDDD';
+			const url = 'foo example 123123 https://discord.gg/WNdbZDJm computer cat UwU :DDDDDD';
 			expect(isDiscordInviteLink(url)).toBe(true);
 		});
 
@@ -92,6 +92,6 @@ describe('#isDiscordInviteLink', () => {
 });
 
 
-describe('#isNotVaildDiscordInviteLink', () => {
+describe('#isNotValidDiscordInviteLink', () => {
 
 });
