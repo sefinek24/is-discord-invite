@@ -1,8 +1,8 @@
 <div align="center">
     <h1>🌍・What is that?・🌍</h1>
     <p>
-        <b>EN:</b> This npm package will check a string is an invitation to the Discord server.<br>
-        <b>PL:</b> Ten moduł npm sprawdza ciąg znaków, czy znajduję się w nim zaproszenie na serwer Discord.
+        <b>EN:</b> This npm package checks if a string is an invitation to a Discord server.<br>
+        <b>PL:</b> Ten moduł npm sprawdza, czy dany ciąg jest zaproszeniem do serwera Discord.
     </p>
     <a href="https://www.npmjs.com/package/is-discord-invite" target="_blank" title="is-discord-invite - npm" style="text-decoration:none">
         <img src="https://img.shields.io/npm/dt/is-discord-invite.svg?maxAge=3600" alt="npm downloads">
@@ -23,19 +23,19 @@
 ```js
 // Example 1
 
-const isInvite = require('is-discord-invite');
+const isInvitation = require('is-discord-invite');
 
-isInvite('https://discord.gg/BAtT5MZJ'); // true
-isInvite('https://sefinek.net'); // false
+isInvitation('https://discord.gg/b8nzKtfs'); // true
+isInvitation('https://sefinek.net'); // false
 ```
 
 ```js
 // Example 2 for Discord.js - https://www.npmjs.com/package/discord.js
 
-const isInvite = require('is-discord-invite');
+const isInvitation = require('is-discord-invite');
 const url = 'https://discord.gg/h9Y6FjUR';
 
-if (isInvite(url)) {
+if (isInvitation(url)) {
     interaction.reply('✅ This is an invitation!');
 } else {
     interaction.reply('❎ This is not an invitation.');

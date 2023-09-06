@@ -1,6 +1,6 @@
 {
   "name": "is-discord-invite",
-  "version": "1.0.11",
+  "version": "1.1.0",
   "description": "Checking if the URL is a Discord invite.",
   "keywords": [
     "url",

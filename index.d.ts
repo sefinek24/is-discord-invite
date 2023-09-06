@@ -1,5 +1,13 @@
 declare module 'is-discord-invite' {
-    type IsInviteLink = (str: string) => boolean;
-    const isInviteLink: IsInviteLink;
-    export = isInviteLink;
+    interface DiscordInvitationOptions {
+        defaultDiscordUrls?: boolean;
+        otherDiscordUrls?: boolean;
+        disboard?: boolean;
+        discordMe?: boolean;
+        discordhome?: boolean;
+        everything?: boolean;
+    }
+
+    type isInvitation = (url: string, options?: DiscordInvitationOptions) => boolean;
+    export = isInvitation;
 }

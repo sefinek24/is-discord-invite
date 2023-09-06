@@ -1,4 +1,4 @@
-const isInvite = require('../');
+const isInvite = require('../index.js');
 
 describe('Discord Invite Link Validation', () => {
 	const validInviteUrls = [
@@ -14,7 +14,7 @@ describe('Discord Invite Link Validation', () => {
 		'https://disboard.org/server/join/000000000000000000',
 		'https://disboard.org/en/server/join/000000000000000000',
 		'https://disboard.org/pl/server/join/000000000000000000',
-		'some text 1 2 3 https://disboard.org/pl/server/join/000000000000000000 3213 1 some text',
+		'some text 1 2 3 <cat> https://disboard.org/pl/server/join/000000000000000000 3213 666 some text',
 		'https://discord.me/server/join/direct/example',
 		'https://discordhome.com/join/00000',
 	];
