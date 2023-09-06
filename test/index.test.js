@@ -27,11 +27,11 @@ describe('Discord Invite Link Validation', () => {
 		'https://github.com/sefinek24/is-discord-invite',
 	];
 
-	test.each(validInviteUrls)('Valid invite link: %s', (url) => {
+	test.each(validInviteUrls)('Valid invite link: %s', url => {
 		expect(isInvite(url)).toBe(true);
 	});
 
-	test.each(invalidUrls)('Invalid link: %s', (url) => {
+	test.each(invalidUrls)('Invalid link: %s', url => {
 		expect(isInvite(url)).toBe(false);
 	});
 });
