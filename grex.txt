@@ -1,10 +1,14 @@
+// defaultDiscordUrls
 grex "discord.gg/" "discord.com/invite/" "discordapp.com/invite/"
 
-
+// otherDiscordUrls
 grex "watchanimeattheoffice.com/invite/" "discordsays.com/invite/"
 
+// disboard
 grex "disboard.org/server/join/" "disboard.org/en/server/join/" "disboard.org/pl/server/join/"
 
-grex "discordhome.com/join/"
-
+// discordMe
 grex "discord.me/server/join/"
+
+// discordhome
+grex "discordhome.com/join/"
