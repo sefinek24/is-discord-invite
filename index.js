@@ -1,5 +1,5 @@
-const regex = require('./regex.js');
-const online = require('./online.js');
+const regex = require('./lib/regex.js');
+const online = require('./lib/online.js');
 
 module.exports = {
 	regex,

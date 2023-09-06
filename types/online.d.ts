@@ -1,5 +1,5 @@
 declare module '../online.js' {
-    export interface OnlineModuleResult {
+    export interface CheckViaAPI {
         success: boolean;
         code: string | null;
         isInvitation: boolean;
@@ -9,5 +9,7 @@ declare module '../online.js' {
         discordResponse: any; // Tutaj możesz dodać dokładniejszy typ w zależności od struktury danych
     }
 
-    function online(str: string): Promise<OnlineModuleResult>;
+    function online(str: string): Promise<CheckViaAPI>;
+
+    export default online;
 }
