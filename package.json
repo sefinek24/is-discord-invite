@@ -21,7 +21,7 @@
   "license": "MIT",
   "author": "Sefinek (https://sefinek.net)",
   "main": "index.js",
-  "types": "./index.d.ts",
+  "types": "./types/index.d.ts",
   "scripts": {
     "test": "jest",
     "up": "ncu -u && npm install && npm update && npm audit fix"
