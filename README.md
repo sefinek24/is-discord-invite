@@ -23,7 +23,7 @@ npm install is-discord-invite
 
 | Function       | Async/await | Options                    | Validation                                 | Fast method | Reliability | Recommended |
 |----------------|:------------|----------------------------|:-------------------------------------------|-------------|-------------|:------------|
-| regex(url, {}) | ❎           | [View](#regextext-options) | [Only Regex](grex.txt)                     | ✅           | ❌           | ❌           |
+| regex(url, {}) | ❎           | [View](#regextext-options) | [Only Regex](grex.md)                      | ✅           | ❌           | ❌           |
 | online(url)    | ✅           | [View](#onlinetext)        | [api.sefinek.net](https://api.sefinek.net) | ❌           | ✅           | ✅           |
 
 
