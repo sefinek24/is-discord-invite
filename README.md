@@ -21,10 +21,10 @@ npm install is-discord-invite
 
 ## 🤔 » Table
 
-| Function       | Async/await | Options                    | Validation                                 | Fast method | Reliability | Recommended |
-|----------------|:------------|----------------------------|:-------------------------------------------|-------------|-------------|:------------|
-| regex(url, {}) | ❎           | [View](#regextext-options) | [Only Regex](grex.md)                      | ✅           | ❌           | ❌           |
-| online(url)    | ✅           | [View](#onlinetext)        | [api.sefinek.net](https://api.sefinek.net) | ❌           | ✅           | ✅           |
+| Function       | Async/await | Options                    | Validation                                 | Faster method | Reliability | Recommended |
+|----------------|:------------|----------------------------|:-------------------------------------------|---------------|-------------|:------------|
+| regex(url, {}) | ❎           | [View](#regextext-options) | [Only Regex](grex.md)                      | ✅             | ❌           | ❌           |
+| online(url)    | ✅           | [View](#onlinetext)        | [api.sefinek.net](https://api.sefinek.net) | ❌             | ✅           | ✅           |
 
 
 ## 🌍 API
