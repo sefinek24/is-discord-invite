@@ -4,11 +4,11 @@ describe('#isInvitation.online', () => {
 	it('Empty string', async () => {
 		const result = await isInvitation.online('');
 
-		expect(result.success).toEqual(true);
-		expect(result.code).toEqual(undefined);
-		expect(result.isInvitation).toEqual(false);
-		expect(result.url).toEqual(null);
-		expect(result.invitationCode).toEqual(null);
+		expect(result.success).toBe(true);
+		expect(result.code).toBe(undefined);
+		expect(result.isInvitation).toBe(false);
+		expect(result.url).toBe(null);
+		expect(result.invitationCode).toBe(null);
 	});
 
 	it('Is Discord invitation', async () => {
@@ -17,11 +17,11 @@ describe('#isInvitation.online', () => {
 		const text = `Check out this Discord link: ${url}`;
 		const result = await isInvitation.online(text);
 
-		expect(result.success).toEqual(true);
-		expect(result.code).toEqual(200);
-		expect(result.isInvitation).toEqual(true);
-		expect(result.url).toEqual(url);
-		expect(result.invitationCode).toEqual(invitationCode);
+		expect(result.success).toBe(true);
+		expect(result.code).toBe(200);
+		expect(result.isInvitation).toBe(true);
+		expect(result.url).toBe(url);
+		expect(result.invitationCode).toBe(invitationCode);
 	});
 
 	it('Is not Discord invitation', async () => {
@@ -30,10 +30,10 @@ describe('#isInvitation.online', () => {
 		const text = `Check out this Discord link: ${url}`;
 		const result = await isInvitation.online(text);
 
-		// expect(result.success).toEqual(true);
-		expect(result.code).toEqual(null);
-		expect(result.isInvitation).toEqual(false);
-		expect(result.url).toEqual(text);
-		expect(result.invitationCode).toEqual(null);
+		expect(result.success).toBe(true);
+		expect(result.code).toBe(null);
+		expect(result.isInvitation).toBe(false);
+		expect(result.url).toBe(text);
+		expect(result.invitationCode).toBe(null);
 	});
 });
