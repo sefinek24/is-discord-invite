@@ -21,10 +21,10 @@ npm install is-discord-invite
 
 ## 🤔 » Table
 
-| Function       | Async/await | Options                       | Validation                                 | Fast method | Reliability | Recommended |
-|----------------|:------------|-------------------------------|:-------------------------------------------|-------------|-------------|:------------|
-| regex(url, {}) | ❎           | Click [here](#-regex-options) | Only Regex                                 | ✅           | ❌           | ❌           |
-| online(url)    | ✅           | Click [here](#-api-options)   | [api.sefinek.net](https://api.sefinek.net) | ❌           | ✅           | ✅           |
+| Function       | Async/await | Options                   | Validation                                 | Fast method | Reliability | Recommended |
+|----------------|:------------|---------------------------|:-------------------------------------------|-------------|-------------|:------------|
+| regex(url, {}) | ❎           | [View](#regexurl-options) | Only Regex                                 | ✅           | ❌           | ❌           |
+| online(url)    | ✅           | [View](#api-options)      | [api.sefinek.net](https://api.sefinek.net) | ❌           | ✅           | ✅           |
 
 
 ## 🌍 API
@@ -44,7 +44,7 @@ If no options are provided, the `everything` option will be set to `true`, meani
 **Returns**: `true` if the input is a valid Discord server invitation link, `false` otherwise.
 
 
-### `checkDiscordInvitations(text)`
+### `online(text)`
 Checks for valid Discord invitation links in the provided text and fetches invitation data.
 
 - `text` (string): The input text to search for Discord invitation links.
