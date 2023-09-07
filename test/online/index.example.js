@@ -1,10 +1,9 @@
 const isInvitation = require('../../index.js');
 
 (async () => {
-	const invitationCode = '2137XXXXXXXX2137';
-	const url = `https://discord.gg/${invitationCode}`;
-	const text = `Check out this Discord link: ${url}`;
-	const result = await isInvitation.online(' https://discord.gg/sgdfsgfdgsfdgsfd https://discord.gg/prEpvx2dSRz https://discord.gg/sgdfsgfdgsfdgsfdhttps://discord.gg/sgdfsgfdgsfdgsfdhttps://discord.gg/sgdfsgfdgsfdgsfd');
+	const result = await isInvitation.online(
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, https://discord.gg/fgasfasd sed do eiusmod tempor incididunt ut labore https://discord.gg/000000000 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationhttps://discord.gg/yrtyretbhe ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velithttps://disdsgasgaesse cillum dolore eu fugiat nulla pariatur. Excepteurhttps://discord.gg/prEpvx2SRz sint occaecat cupidatat nondiscord.gg/fgasfasdproident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+	);
 
-	console.log(result);
+	console.log(result); // Use result.isInvitation to check if the text contains a valid Discord invitation link
 })();
