@@ -1,7 +1,9 @@
 <div align="center">
     <h1>Is this an invitation to a Discord server? ➕</h1>
     <p>
-        This module checks whether a string is a Discord server invitation. If it is, it fetches information from the API to find out more about the server.
+        This module checks whether a string is a Discord server invitation.
+        If it is, it fetches information from the API to find out more about the server.
+        An alternative (but inferior) method is validating the string solely through regex.
     </p>
     <a href="https://www.npmjs.com/package/is-discord-invite" target="_blank" title="is-discord-invite - npm" style="text-decoration:none">
         <img src="https://img.shields.io/npm/dt/is-discord-invite.svg?maxAge=3600" alt="npm downloads">
