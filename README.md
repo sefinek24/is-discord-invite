@@ -156,16 +156,16 @@ const isInvitation = require('is-discord-invite');
     console.log(result.isInvitation); // true
 })();
 ```
-If the regex detects any invitation, the script sends a POST request to the API to verify the link's validity.
+If the regex detects any invitation, the script sends a [POST request](https://en.wikipedia.org/wiki/POST_(HTTP)) to the [API](https://en.wikipedia.org/wiki/API) to verify the link's validity.
 
 
 ## 🤝 » Help
-If you need assistance, visit my official website where you can find my email and current Discord username. Feel free to send me a message on Discord or reach out via email.
+If you have any questions or just need help, please visit my official website, where you can find my email and my current Discord username. Feel free to send me a message on Discord or reach out via email.
 
 Alternatively, you can create a new [Issue](https://github.com/sefinek24/is-discord-invite/issues/new).
 
 ## 🌿 Pull requests
-Collaborators are welcome! If you'd like to share your suggestions or corrections for this project, we encourage you to create Pull Requests.
+Collaborators are welcome! If you'd like to contribute your suggestions or corrections to this project, we encourage you to create [Pull requests](https://github.com/sefinek24/is-discord-invite/pulls).
 
 ## ⭐ » Thanks
 Thank you for your interest in this module. If you like it or find it useful, please consider starring the [repository](https://github.com/sefinek24/is-discord-invite).
