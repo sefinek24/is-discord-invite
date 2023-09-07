@@ -63,7 +63,7 @@ describe('#isInvitation.online', () => {
 		expect(result.discordResponse).toBe(null);
 	});
 
-	it('zero-width space', async () => {
+	it('Zero-width space', async () => {
 		const text = '​​​​​​';
 		const result = await isInvitation.online(text);
 

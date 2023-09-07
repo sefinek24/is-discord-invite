@@ -1,4 +1,5 @@
 const https = require('https');
+const { name, version } = require('../package.json');
 
 const sendHttpRequest = url => {
 	return new Promise((resolve, reject) => {
@@ -10,6 +11,7 @@ const sendHttpRequest = url => {
 			path: '/api/v2/discord/invitation',
 			method: 'POST',
 			headers: {
+				'User-Agent': `${name}/${version} (+https://api.sefinek.net)`,
 				'Content-Type': 'application/json',
 				'Content-Length': postData.length,
 			},
