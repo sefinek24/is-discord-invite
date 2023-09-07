@@ -23,7 +23,7 @@
   "main": "index.js",
   "types": "./types/index.d.ts",
   "scripts": {
-    "test": "jest",
+    "test": "jest test",
     "up": "ncu -u && npm install && npm update && npm audit fix"
   },
   "devDependencies": {

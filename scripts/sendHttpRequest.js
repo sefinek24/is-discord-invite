@@ -1,8 +1,8 @@
 const https = require('https');
 
-const sendHttpRequest = (link) => {
+const sendHttpRequest = url => {
 	return new Promise((resolve, reject) => {
-		const postData = JSON.stringify({ url: link });
+		const postData = JSON.stringify({ url });
 
 		const options = {
 			hostname: 'api.sefinek.net',
@@ -15,7 +15,7 @@ const sendHttpRequest = (link) => {
 			},
 		};
 
-		const req = https.request(options, (res) => {
+		const req = https.request(options, res => {
 			let data = '';
 
 			res.on('data', (chunk) => {
@@ -28,17 +28,17 @@ const sendHttpRequest = (link) => {
 				} else {
 					try {
 						const responseData = JSON.parse(data);
-						resolve({ link, data: responseData });
-					} catch (error) {
-						reject(new Error(`Error parsing API response: ${error.message}`));
+						resolve({ url, data: responseData });
+					} catch (err) {
+						reject(new Error(`Error parsing API response: ${err.message}`));
 					}
 				}
 			});
 		});
 
-		req.on('error', (error) => {
-			console.error(`Error sending request to API server: ${error.message}`);
-			reject(error);
+		req.on('error', err => {
+			console.error(`Error sending request to API server: ${err.message}`);
+			reject(err);
 		});
 
 		req.write(postData);
