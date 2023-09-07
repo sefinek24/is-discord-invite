@@ -160,7 +160,12 @@ If the regex detects any invitation, the script sends a POST request to the API 
 
 
 ## 🤝 » Help
-Open new [Issue](https://github.com/sefinek24/is-discord-invite/issues/new) on GitHub.
+If you need assistance, visit my official website where you can find my email and current Discord username. Feel free to send me a message on Discord or reach out via email.
 
-## ⭐ » Thank you
-Star the [repo](https://github.com/sefinek24/is-discord-invite) if you liked it!
+Alternatively, you can create a new [Issue](https://github.com/sefinek24/is-discord-invite/issues/new).
+
+## 🌿 Pull requests
+Collaborators are welcome! If you'd like to share your suggestions or corrections for this project, we encourage you to create Pull Requests.
+
+## ⭐ » Thanks
+Thank you for your interest in this module. If you like it or find it useful, please consider starring the [repository](https://github.com/sefinek24/is-discord-invite).
