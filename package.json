@@ -1,6 +1,6 @@
 {
   "name": "is-discord-invite",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Checking if the URL is a Discord invite.",
   "keywords": [
     "discord",
@@ -8,7 +8,6 @@
     "discord-invitation-check",
     "discord-invitation-checker",
     "discord-invitation-checking",
-    "discord-invitation-identifier",
     "discord-invitation-identifier",
     "discord-invitation-identifying",
     "discord-invitation-link",
@@ -55,10 +54,17 @@
   "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",
   "main": "index.js",
   "types": "./types/index.d.ts",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
+  "files": [
+    "lib/",
+    "scripts/",
+    "test/",
+    "types/",
+    ".gitignore",
+    "index.js",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "test": "jest test",
     "up": "ncu -u && npm install && npm update && npm audit fix"
