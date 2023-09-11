@@ -1,4 +1,4 @@
-const https = require('https');
+const https = require('node:https');
 const { name, version } = require('../package.json');
 
 const sendHttpRequest = url => {
@@ -11,16 +11,15 @@ const sendHttpRequest = url => {
 			path: '/api/v2/discord/invitation',
 			method: 'POST',
 			headers: {
-				'User-Agent': `${name}/${version} (+https://api.sefinek.net)`,
+				'User-Agent': `${name}/${version} (+https://github.com/sefinek24/is-discord-invite)`,
 				'Content-Type': 'application/json',
-				'Content-Length': postData.length,
 			},
 		};
 
 		const req = https.request(options, res => {
 			let data = '';
 
-			res.on('data', (chunk) => {
+			res.on('data', chunk => {
 				data += chunk;
 			});
 
