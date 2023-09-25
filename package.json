@@ -1,6 +1,6 @@
 {
   "name": "is-discord-invite",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Checking if the URL is a Discord invite.",
   "keywords": [
     "discord",
@@ -70,6 +70,6 @@
     "up": "ncu -u && npm install && npm update && npm audit fix"
   },
   "devDependencies": {
-    "jest": "^29.6.4"
+    "jest": "^29.7.0"
   }
 }
