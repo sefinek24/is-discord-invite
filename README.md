@@ -19,6 +19,9 @@
 npm install is-discord-invite
 ```
 
+## ✨ Example bot (discord.js)
+> https://github.com/sefinek24/is-discord-invitation-bot
+
 ## 🤔 » Table
 
 | Function        | Async/await | Options                    | Validation                     | Faster method | Reliability | Recommended |
