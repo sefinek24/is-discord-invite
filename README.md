@@ -135,7 +135,7 @@ Quick method, but definitely not recommended for most cases. `isInvitation` will
 ```js
 const isInvitation = require('is-discord-invite');
 
-const result1 = isInvitation.regex('https://discord.gg/BKzhQwd6fa', { everything: true }); // Example with `everything` option
+const result1 = isInvitation.regex('https://discord.gg/j7Ac5mTn', { everything: true }); // Example with `everything` option
 console.log(result1); // true
 
 const result2 = isInvitation.regex('https://discord.gg/notVaildUrl');
@@ -146,14 +146,14 @@ console.log(result3); // false
 ```
 
 ### Online
-In this case, `isInvitation` will be `true` due to the link with the code `BKzhQwd6fa`, as it is the only valid one.  
+In this case, `isInvitation` will be `true` due to the link with the code `j7Ac5mTn`, as it is the only valid one.  
 
 ```js
 const isInvitation = require('is-discord-invite');
 
 (async () => {
     const result = await isInvitation.online(
-        'Lorem ipsum dolor sit amet, https://discord.gg/notVaild consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna https://discord.gg/BKzhQwd6fa aliqua.',
+        'Lorem ipsum dolor sit amet, https://discord.gg/notVaild consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna https://discord.gg/j7Ac5mTn aliqua.',
     );
 
     console.log(result.isInvitation); // true

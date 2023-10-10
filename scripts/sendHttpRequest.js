@@ -1,7 +1,7 @@
-const https = require('node:https');
+const https = require('https');
 const { name, version } = require('../package.json');
 
-const sendHttpRequest = url => {
+module.exports = url => {
 	return new Promise((resolve, reject) => {
 		const postData = JSON.stringify({ url });
 
@@ -12,27 +12,26 @@ const sendHttpRequest = url => {
 			method: 'POST',
 			headers: {
 				'User-Agent': `${name}/${version} (+https://github.com/sefinek24/is-discord-invite)`,
-				'Content-Type': 'application/json',
+				'Accept': 'application/json',
 			},
 		};
 
 		const req = https.request(options, res => {
-			let data = '';
+			let responseData = '';
 
 			res.on('data', chunk => {
-				data += chunk;
+				responseData += chunk;
 			});
 
 			res.on('end', () => {
-				if (res.statusCode !== 200) {
-					reject(new Error(`Error sending request to API server: ${res.statusCode}`));
-				} else {
+				if (res.statusCode === 200) {
 					try {
-						const responseData = JSON.parse(data);
-						resolve({ url, data: responseData });
+						resolve({ url, data: JSON.parse(responseData) });
 					} catch (err) {
 						reject(new Error(`Error parsing API response: ${err.message}`));
 					}
+				} else {
+					reject(new Error(`Error sending request to API server: ${res.statusCode}`));
 				}
 			});
 		});
@@ -46,5 +45,3 @@ const sendHttpRequest = url => {
 		req.end();
 	});
 };
-
-module.exports = sendHttpRequest;
