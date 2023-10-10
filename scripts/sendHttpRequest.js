@@ -1,20 +1,31 @@
-const https = require('https');
-const { name, version } = require('../package.json');
+const https = require('node:https');
+const { name, version, devDependencies } = require('../package.json');
 
-module.exports = url => {
+const options = {
+	hostname: 'api.sefinek.net',
+	port: 443,
+	path: '/api/v2/discord/invitation',
+	method: 'POST',
+	headers: {
+		'User-Agent': `${name}/${version} (+https://github.com/sefinek24/is-discord-invite) ${process.env.JEST_WORKER_ID === undefined ? '' : `jest/${devDependencies.jest.replace('^', '')}`}`,
+		'Accept': 'application/json',
+		'Content-Type': 'application/json',
+		'Cache-Control': 'no-cache',
+		'CF-IPCountry': 'false',
+		'CF-Visitor': '{"scheme":"https"}',
+		'Connection': 'keep-alive',
+		'DNT': '1',
+		'Pragma': 'no-cache',
+		'Referrer-Policy': 'strict-origin-when-cross-origin',
+		'X-Content-Type-Options': 'nosniff',
+		'X-Frame-Options': 'DENY',
+		'X-XSS-Protection': '1; mode=block',
+	},
+};
+
+module.exports = async url => {
 	return new Promise((resolve, reject) => {
 		const postData = JSON.stringify({ url });
-
-		const options = {
-			hostname: 'api.sefinek.net',
-			port: 443,
-			path: '/api/v2/discord/invitation',
-			method: 'POST',
-			headers: {
-				'User-Agent': `${name}/${version} (+https://github.com/sefinek24/is-discord-invite)`,
-				'Accept': 'application/json',
-			},
-		};
 
 		const req = https.request(options, res => {
 			let responseData = '';
@@ -26,7 +37,7 @@ module.exports = url => {
 			res.on('end', () => {
 				if (res.statusCode === 200) {
 					try {
-						resolve({ url, data: JSON.parse(responseData) });
+						resolve({ data: JSON.parse(responseData) });
 					} catch (err) {
 						reject(new Error(`Error parsing API response: ${err.message}`));
 					}
