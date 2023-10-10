@@ -23,10 +23,10 @@ const options = {
 	},
 };
 
-module.exports = async url => {
-	return new Promise((resolve, reject) => {
-		const postData = JSON.stringify({ url });
+module.exports = url => {
+	const postData = JSON.stringify({ url });
 
+	return new Promise((resolve, reject) => {
 		const req = https.request(options, res => {
 			let responseData = '';
 
