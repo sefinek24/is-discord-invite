@@ -44,7 +44,7 @@ Checks if the given string contains Discord server invitations. Validation is ba
 
 If no options are provided, the `everything` option will be set to `true`, meaning that all types of Discord server invitation links will be checked.
 
-> **Returns**: `true` if the input is a valid Discord server invitation link, `false` otherwise.
+> **Returns** (boolean): `true` if the input is a valid Discord server invitation link, `false` otherwise.
 
 
 ### `online(text)`
@@ -52,7 +52,7 @@ Checks for valid Discord invitation links in the provided text and fetches invit
 
 - `text` (string): The input text to search for Discord invitation links.
 
-> **Returns**: A Promise that resolves to an object with invitation data.
+> **Returns** (object): A Promise that resolves to an object with invitation data.
 
 
 ### Invitation Data
