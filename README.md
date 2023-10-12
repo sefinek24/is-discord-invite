@@ -123,7 +123,7 @@ In case the invitation was not valid 100%:
 
 ## 📄 » Examples
 
-### Regex
+### 🔡 Regex
 Quick method, but definitely not recommended for most cases. `isInvitation` will be `true` even if the invitation has expired or simply doesn't work.
 
 ```js
@@ -139,7 +139,7 @@ const result3 = isInvitation.regex('https://example.com/bKzhAdd6Fa');
 console.log(result3); // false
 ```
 
-### Online
+### 🧪 Online
 In this case, `isInvitation` will be `true` due to the link with the code `j7Ac5mTn`, as it is the only valid one.  
 
 ```js
