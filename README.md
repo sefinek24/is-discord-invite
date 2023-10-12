@@ -165,4 +165,4 @@ Alternatively, you can create a new [Issue](https://github.com/sefinek24/is-disc
 Collaborators are welcome! If you'd like to contribute your suggestions or corrections to this project, we encourage you to create [Pull requests](https://github.com/sefinek24/is-discord-invite/pulls).
 
 ## ⭐ » Thanks
-Thank you for your interest in this module. If you like it or find it useful, please consider starring the [repository](https://github.com/sefinek24/is-discord-invite). Check my other [repositories](https://github.com/sefinek24)!
+Thank you for your interest in this module. If you like it or find it useful, please consider starring the [repository](https://github.com/sefinek24/is-discord-invite).
