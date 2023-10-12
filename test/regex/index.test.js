@@ -36,8 +36,8 @@ describe('#isDiscordInviteLink.regex', () => {
 			expect(isDiscordInviteLink.regex(url)).toBe(true);
 		});
 
-		test('Valid Discord.gg/invite link 3', () => {
-			const url = 'ABCDE123>&^*%mn$v%&$^n#^$%#hb$%^h#b<https://discord.gg/invite/t6uYRKR?qwpe{r:lqfeQWECFRQ';
+		test('Valid DISCORD.GG/invite link 3', () => {
+			const url = 'ABCDE123>&^*%mn$v%&$^n#^$%#hb$%^h#b<https://DISCORD.GG/invite/t6uYRKR?qwpe{r:lqfeQWECFRQ';
 			expect(isDiscordInviteLink.regex(url)).toBe(true);
 		});
 	});
