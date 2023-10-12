@@ -64,15 +64,15 @@ If a valid invitation link is found, the returned data will have the following s
   "code": 200,
   "isInvitation": true,
   "message": "Success",
-  "url": "https://discord.gg/prEpvx2SRz",
-  "invitationCode": "prEpvx2SRz",
+  "url": "https://discord.gg/j7Ac5mTn",
+  "invitationCode": "j7Ac5mTn",
   "discordResponse": {
     "type": 0,
-    "code": "prEpvx2SRz",
+    "code": "j7Ac5mTn",
     "inviter": {
       "id": "561621386569973783",
       "username": "sefinek24",
-      "avatar": "a_999b0e0278a65f7b145706c7e2822903",
+      "avatar": "aceba4f2ffd0e12f25d164b2217a6d8b",
       "discriminator": "0",
       "public_flags": 256,
       "flags": 256,
@@ -82,30 +82,24 @@ If a valid invitation link is found, the returned data will have the following s
       "avatar_decoration_data": null,
       "banner_color": null
     },
-    "expires_at": null,
+    "expires_at": "2023-10-17T13:57:25+00:00",
+    "flags": 2,
     "guild": {
-      "id": "1149087970587062392",
-      "name": "pussycat",
-      "splash": null,
-      "banner": null,
-      "description": null,
-      "icon": null,
-      "features": [
-        "COMMUNITY",
-        "NEWS"
-      ],
-      "verification_level": 1,
+      "id": "1044713077125435492",
+      "name": "Genshin Stella Mod",
+      "splash": "4bf7a37c08bc2075530fc4fdd9292c64",
+      "banner": "919639c252701af936d17b102d053b51",
+      "description": "Support server for Genshin Impact Stella Mod made by Sefinek. ReShade, graphics presets, FPS unlock, 3DMigoto and more!",
+      "icon": "a_0e946d9b1a68915b1c3b9c11f50354e7",
+      "features": [],
+      "verification_level": 2,
       "vanity_url_code": null,
       "nsfw_level": 0,
       "nsfw": false,
-      "premium_subscription_count": 0
+      "premium_subscription_count": 6
     },
-    "guild_id": "1149087970587062392",
-    "channel": {
-      "id": "1149087970587062395",
-      "type": 0,
-      "name": "general"
-    }
+    "guild_id": "1044713077125435492",
+    "channel": { "id": "1065275114687570011", "type": 0, "name": "「🔔」announcements" }
   }
 }
 ```
@@ -117,8 +111,8 @@ In case the invitation was not valid 100%:
     "code": 200,
     "isInvitation": false,
     "message": "Request failed with status code 404",
-    "url": "https://discord.gg/notVaild",
-    "invitationCode": "notVaild",
+    "url": "https://discord.gg/notValid",
+    "invitationCode": "notValid",
     "discordResponse": {
         "message": "Unknown Invite",
         "code": 10006
@@ -153,7 +147,7 @@ const isInvitation = require('is-discord-invite');
 
 (async () => {
     const result = await isInvitation.online(
-        'Lorem ipsum dolor sit amet, https://discord.gg/notVaild consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna https://discord.gg/j7Ac5mTn aliqua.',
+        'Lorem ipsum dolor sit amet, https://discord.gg/notValid consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna https://discord.gg/j7Ac5mTn aliqua.',
     );
 
     console.log(result.isInvitation); // true
