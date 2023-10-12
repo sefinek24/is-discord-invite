@@ -19,19 +19,19 @@
 npm install is-discord-invite
 ```
 
-## ✨ Example bot (discord.js)
+## ✨ Example bot made in discord.js
 > https://github.com/sefinek24/is-discord-invitation-bot
 
 ## 🤔 » Table
 
-| Function        | Async/await | Options                    | Validation                     | Faster method | Reliability | Recommended |
-|-----------------|:------------|----------------------------|:-------------------------------|---------------|-------------|:------------|
-| regex(text, {}) | No          | [View](#regextext-options) | [Regex](grex.md)               | ✅             | ❌           | ❌           |
-| online(text)    | Yes         | [View](#onlinetext)        | [API](https://api.sefinek.net) | ❌             | ✅           | ✅           |
+| Function | Async/await | Options                    | Validation                     | Faster method | Reliability | Recommended |
+|----------|:------------|----------------------------|:-------------------------------|---------------|-------------|:------------|
+| regex    | No          | [View](#regextext-options) | [Regex](grex.md)               | ✅             | ❌           | ❌           |
+| online   | Yes         | [View](#onlinetext)        | [API](https://api.sefinek.net) | ❌             | ✅           | ✅           |
 
 
 ## 🌍 API
-### `regex(text, options)`
+### `regex(text, { options })`
 Checks if the given string contains Discord server invitations. Validation is based solely on the string itself. In this case, the script does NOT verify whether the link is actually associated with a server.
 
 - `text` (string): The input string to be checked.
@@ -44,7 +44,7 @@ Checks if the given string contains Discord server invitations. Validation is ba
 
 If no options are provided, the `everything` option will be set to `true`, meaning that all types of Discord server invitation links will be checked.
 
-**Returns**: `true` if the input is a valid Discord server invitation link, `false` otherwise.
+> **Returns**: `true` if the input is a valid Discord server invitation link, `false` otherwise.
 
 
 ### `online(text)`
@@ -52,7 +52,7 @@ Checks for valid Discord invitation links in the provided text and fetches invit
 
 - `text` (string): The input text to search for Discord invitation links.
 
-**Returns**: A Promise that resolves to an object with invitation data.
+> **Returns**: A Promise that resolves to an object with invitation data.
 
 
 ### Invitation Data
