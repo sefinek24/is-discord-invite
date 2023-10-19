@@ -12,7 +12,7 @@ describe('#isInvitation.online', () => {
 	});
 
 	it('Is Discord invitation', async () => {
-		const invitationCode = 'j7Ac5mTn';
+		const invitationCode = 'HjEyuee4mc';
 		const url = `https://discord.gg/${invitationCode}`;
 		const text = `Check out this Discord link: ${url}`;
 		const result = await isInvitation.online(text);
