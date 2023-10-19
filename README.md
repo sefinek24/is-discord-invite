@@ -64,11 +64,11 @@ If a valid invitation link is found, the returned data will have the following s
   "code": 200,
   "isInvitation": true,
   "message": "Success",
-  "url": "https://discord.gg/j7Ac5mTn",
-  "invitationCode": "j7Ac5mTn",
+  "url": "https://discord.gg/HjEyuee4mc",
+  "invitationCode": "HjEyuee4mc",
   "discordResponse": {
     "type": 0,
-    "code": "j7Ac5mTn",
+    "code": "HjEyuee4mc",
     "inviter": {
       "id": "561621386569973783",
       "username": "sefinek24",
@@ -129,7 +129,7 @@ Quick method, but definitely not recommended for most cases. `isInvitation` will
 ```js
 const isInvitation = require('is-discord-invite');
 
-const result1 = isInvitation.regex('https://discord.gg/j7Ac5mTn', { everything: true }); // Example with `everything` option
+const result1 = isInvitation.regex('https://discord.gg/HjEyuee4mc', { everything: true }); // Example with `everything` option
 console.log(result1); // true
 
 const result2 = isInvitation.regex('https://discord.gg/notVaildUrl');
@@ -140,14 +140,14 @@ console.log(result3); // false
 ```
 
 ### 🧪 Online
-In this case, `isInvitation` will be `true` due to the link with the code `j7Ac5mTn`, as it is the only valid one.  
+In this case, `isInvitation` will be `true` due to the link with the code `HjEyuee4mc`, as it is the only valid one.  
 
 ```js
 const isInvitation = require('is-discord-invite');
 
 (async () => {
     const result = await isInvitation.online(
-        'Lorem ipsum dolor sit amet, https://discord.gg/notValid consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna https://discord.gg/j7Ac5mTn aliqua.',
+        'Lorem ipsum dolor sit amet, https://discord.gg/notValid consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna https://discord.gg/HjEyuee4mc aliqua.',
     );
 
     console.log(result.isInvitation); // true
