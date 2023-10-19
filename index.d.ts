@@ -1,3 +1,7 @@
+/**
+ * @module is-discord-invite
+ */
+
 declare module 'is-discord-invite' {
     interface RegexFilters {
         everything?: boolean;
@@ -59,7 +63,20 @@ declare module 'is-discord-invite' {
         discordResponse: DiscordResponse;
     }
 
-
+    /**
+     * This module checks if a given string is an invitation link to a Discord server.
+     *
+     * @param {string} text - The input string to be checked.
+     * @param {object} options - An options object for customizing the behavior.
+     * @returns {boolean} - Returns `true` if the input is a valid Discord server invitation link, `false` otherwise.
+     */
     export function regex(text: string, options?: RegexFilters): boolean;
+
+    /**
+     * Checks for valid Discord invitation links in a given text and fetches invitation data.
+     *
+     * @param {string} text - The input text to search for Discord invitation links.
+     * @returns {Promise<Object|null>} - Returns invitation data if a valid link is found, or `null` if no valid links are found.
+     */
     export function online(text: string): Promise<SefinekAPIResponse>;
 }
