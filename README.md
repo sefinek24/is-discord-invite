@@ -127,15 +127,15 @@ In case the invitation was not valid 100%:
 Quick method, but definitely not recommended for most cases. `isInvitation` will be `true` even if the invitation has expired or simply doesn't work.
 
 ```js
-const isInvitation = require('is-discord-invite');
+const IsInvitation = require('is-discord-invite');
 
-const result1 = isInvitation.regex('https://discord.gg/HjEyuee4mc', { everything: true }); // Example with `everything` option
+const result1 = IsInvitation.regex('https://discord.gg/HjEyuee4mc', { everything: true }); // Example with `everything` option
 console.log(result1); // true
 
-const result2 = isInvitation.regex('https://discord.gg/notVaildUrl');
+const result2 = IsInvitation.regex('https://discord.gg/notVaildUrl');
 console.log(result2); // true
 
-const result3 = isInvitation.regex('https://example.com/bKzhAdd6Fa');
+const result3 = IsInvitation.regex('https://example.com/bKzhAdd6Fa');
 console.log(result3); // false
 ```
 
@@ -143,10 +143,10 @@ console.log(result3); // false
 In this case, `isInvitation` will be `true` due to the link with the code `HjEyuee4mc`, as it is the only valid one.  
 
 ```js
-const isInvitation = require('is-discord-invite');
+const IsInvitation = require('is-discord-invite');
 
 (async () => {
-    const result = await isInvitation.online(
+    const result = await IsInvitation.online(
         'Lorem ipsum dolor sit amet, https://discord.gg/notValid consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna https://discord.gg/HjEyuee4mc aliqua.',
     );
 

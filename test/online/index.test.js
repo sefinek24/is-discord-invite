@@ -1,8 +1,8 @@
-const isInvitation = require('../../index.js');
+const IsInvitation = require('../../index.js');
 
-describe('#isInvitation.online', () => {
+describe('#IsInvitation.online', () => {
 	it('Empty string', async () => {
-		const result = await isInvitation.online('');
+		const result = await IsInvitation.online('');
 
 		expect(result.success).toBe(true);
 		expect(result.code).toBe(undefined);
@@ -15,7 +15,7 @@ describe('#isInvitation.online', () => {
 		const invitationCode = 'HjEyuee4mc';
 		const url = `https://discord.gg/${invitationCode}`;
 		const text = `Check out this Discord link: ${url}`;
-		const result = await isInvitation.online(text);
+		const result = await IsInvitation.online(text);
 
 		expect(result.success).toBe(true);
 		expect(result.code).toBe(200);
@@ -28,7 +28,7 @@ describe('#isInvitation.online', () => {
 		const invitationCode = '2137XXXXXXXX2137';
 		const url = `https://discord.gg/${invitationCode}`;
 		const text = `Check out this Discord link: ${url}`;
-		const result = await isInvitation.online(text);
+		const result = await IsInvitation.online(text);
 
 		expect(result.success).toBe(true);
 		expect(result.code).toBe(null);
@@ -39,7 +39,7 @@ describe('#isInvitation.online', () => {
 
 	it('No valid links', async () => {
 		const text = 'This is a random text without any Discord links.';
-		const result = await isInvitation.online(text);
+		const result = await IsInvitation.online(text);
 
 		expect(result.success).toBe(true);
 		expect(result.code).toBe(undefined);
@@ -52,7 +52,7 @@ describe('#isInvitation.online', () => {
 
 	it('Error sending requests to the API server', async () => {
 		const text = 'https://discord.gg/invalidlink';
-		const result = await isInvitation.online(text);
+		const result = await IsInvitation.online(text);
 
 		expect(result.success).toBe(true);
 		expect(result.code).toBe(null);
@@ -65,7 +65,7 @@ describe('#isInvitation.online', () => {
 
 	it('Zero-width space', async () => {
 		const text = '​​​​​​';
-		const result = await isInvitation.online(text);
+		const result = await IsInvitation.online(text);
 
 		expect(result.success).toBe(true);
 		expect(result.code).toBe(undefined);
