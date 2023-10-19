@@ -63,6 +63,7 @@ declare module 'is-discord-invite' {
         discordResponse: DiscordResponse;
     }
 
+
     /**
      * This module checks if a given string is an invitation link to a Discord server.
      *
