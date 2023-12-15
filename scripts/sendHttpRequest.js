@@ -1,4 +1,4 @@
-const https = require('node:https');
+const https = require('https');
 const { name, version, devDependencies } = require('../package.json');
 
 const options = {
