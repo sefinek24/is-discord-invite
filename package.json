@@ -1,6 +1,6 @@
 {
   "name": "is-discord-invite",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Verifies the presence of a Discord server invitation in a given string or message, with additional features for validating and confirming the authenticity and validity of the invitation link.",
   "keywords": [
     "discord",
