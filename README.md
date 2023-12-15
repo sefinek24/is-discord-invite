@@ -19,7 +19,7 @@
 npm install is-discord-invite
 ```
 
-## ✨ Example bot made in discord.js
+## ✨ Example bot made in Discord.js
 > https://github.com/sefinek24/is-discord-invitation-bot
 
 ## 🤔 » Table
