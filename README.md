@@ -26,8 +26,8 @@ npm install is-discord-invite
 
 | Function | Async/await | Options                      | Validation                                 | Faster method | Reliability | Recommended |
 |----------|:------------|------------------------------|:-------------------------------------------|---------------|-------------|:------------|
-| regex    | No          | [View](#regextext--options-) | [Regex](grex.md)                           | ✅             | ❌           | ❌           |
 | online   | Yes         | [View](#onlinemessage)       | [API](https://discord.com/api/v10/invites) | ❌             | ✅           | ✅           |
+| regex    | No          | [View](#regextext--options-) | [Regex](grex.md)                           | ✅             | ❌           | ❌           |
 
 
 ## 🌍 API
