@@ -32,9 +32,10 @@ npm install is-discord-invite
 
 ## 🌍 API
 ### `regex(text, { options })`
-Checks if the given string contains Discord server invitations. Validation is based solely on the string itself. In this case, the script does NOT verify whether the link is actually associated with a server.
+Checks if the given string contains Discord server invitations. Validation is based solely on the string itself.
+In this case, the script does NOT verify whether the link is actually associated with a server.
 
-- `text` (string): The input string to be checked.
+- `message` (string): The input string to be checked.
 - `options` (object, optional): An options object for customizing the behavior. You can customize which types of Discord server invitation links to check by setting specific options to `true` or `false`. Available options include:
     - `defaultDiscordUrls` (boolean, default `false`): Check default Discord invitation URLs.
     - `otherDiscordUrls` (boolean, default `false`): Checks other domains created by Discord Inc. that redirect to discord.com/*.
@@ -47,7 +48,7 @@ If no options are provided, the `everything` option will be set to `true`, meani
 > **Returns** (boolean): `true` if the input is a valid Discord server invitation link, `false` otherwise.
 
 
-### `online(text)`
+### `online(message)`
 Checks for valid Discord invitation links in the provided text and fetches invitation data.
 
 - `text` (string): The input text to search for Discord invitation links.
@@ -64,42 +65,41 @@ If a valid invitation link is found, the returned data will have the following s
   "code": 200,
   "isInvitation": true,
   "message": "Success",
-  "url": "https://discord.gg/HjEyuee4mc",
-  "invitationCode": "HjEyuee4mc",
-  "discordResponse": {
-    "type": 0,
-    "code": "HjEyuee4mc",
-    "inviter": {
-      "id": "561621386569973783",
-      "username": "sefinek24",
-      "avatar": "aceba4f2ffd0e12f25d164b2217a6d8b",
-      "discriminator": "0",
-      "public_flags": 256,
-      "flags": 256,
-      "banner": null,
-      "accent_color": null,
-      "global_name": "Sefinek",
-      "avatar_decoration_data": null,
-      "banner_color": null
+  "url": {
+    "full": "https://discord.gg/crtm7UKz",
+    "invitationCode": "crtm7UKz",
+    "fetched": "crtm7UKz"
+  },
+  "inviter": {
+    "id": "614087461227986965",
+    "username": "sefinek025",
+    "avatar": "a_fc3d7404ae62d64ca4c3d777815ba167",
+    "discriminator": "0",
+    "public_flags": 256,
+    "premium_type": 2,
+    "flags": 256,
+    "banner": "a_d9d11fb5320ce4cca30b7d85c837ce64",
+    "accent_color": null,
+    "global_name": "Sefinek 🌠",
+    "avatar_decoration_data": {
+      "asset": "a_88f42fb7360d8224a670a50c3496f315",
+      "sku_id": "1174460780842856588"
     },
-    "expires_at": "2023-10-17T13:57:25+00:00",
-    "flags": 2,
-    "guild": {
-      "id": "1044713077125435492",
-      "name": "Genshin Stella Mod",
-      "splash": "4bf7a37c08bc2075530fc4fdd9292c64",
-      "banner": "919639c252701af936d17b102d053b51",
-      "description": "Support server for Genshin Impact Stella Mod made by Sefinek. ReShade, graphics presets, FPS unlock, 3DMigoto and more!",
-      "icon": "a_0e946d9b1a68915b1c3b9c11f50354e7",
-      "features": [],
-      "verification_level": 2,
-      "vanity_url_code": null,
-      "nsfw_level": 0,
-      "nsfw": false,
-      "premium_subscription_count": 6
-    },
-    "guild_id": "1044713077125435492",
-    "channel": { "id": "1065275114687570011", "type": 0, "name": "「🔔」announcements" }
+    "banner_color": null
+  },
+  "guild": {
+    "id": "1002327795344621669",
+    "name": "Pomoc IT - Sefinek",
+    "splash": null,
+    "banner": null,
+    "description": null,
+    "icon": "faf0e64797c69de5e14be94603935cd9",
+    "features": [ "COMMUNITY", "CHANNEL_ICON_EMOJIS_GENERATED", "NEWS" ],
+    "verification_level": 3,
+    "vanity_url_code": null,
+    "nsfw_level": 0,
+    "nsfw": false,
+    "premium_subscription_count": 0
   }
 }
 ```
@@ -107,16 +107,13 @@ If a valid invitation link is found, the returned data will have the following s
 In case the invitation was not valid 100%:
 ```json
 {
-    "success": true,
-    "code": 200,
-    "isInvitation": false,
-    "message": "Request failed with status code 404",
-    "url": "https://discord.gg/notValid",
-    "invitationCode": "notValid",
-    "discordResponse": {
-        "message": "Unknown Invite",
-        "code": 10006
-    }
+  "success": true,
+  "code": null,
+  "isInvitation": false,
+  "message": "No valid links found",
+  "url": null,
+  "inviter": null,
+  "guild": null
 }
 ```
 
@@ -147,7 +144,7 @@ const IsInvitation = require('is-discord-invite');
 
 (async () => {
     const result = await IsInvitation.online(
-        'Lorem ipsum dolor sit amet, https://discord.gg/notValid consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna https://discord.gg/HjEyuee4mc aliqua.',
+        'Lorem ipsum dolor sit amet, https://discord.gg/notValid consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna https://discord.gg/HjEyuee4mc aliqua.",
     );
 
     console.log(result.isInvitation); // true

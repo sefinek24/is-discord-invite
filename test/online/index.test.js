@@ -20,8 +20,8 @@ describe('#IsInvitation.online', () => {
 		expect(result.success).toBe(true);
 		expect(result.code).toBe(200);
 		expect(result.isInvitation).toBe(true);
-		expect(result.url).toBe(url);
-		expect(result.invitationCode).toBe(invitationCode);
+		expect(result.url.full).toBe(url);
+		expect(result.url.fetchedCode).toBe(invitationCode);
 	});
 
 	it('Is not Discord invitation', async () => {
@@ -33,8 +33,8 @@ describe('#IsInvitation.online', () => {
 		expect(result.success).toBe(true);
 		expect(result.code).toBe(null);
 		expect(result.isInvitation).toBe(false);
-		expect(result.url).toBe(text);
-		expect(result.invitationCode).toBe(null);
+		expect(result.url).toBe(null);
+		expect(result.invitationCode).toBe(undefined);
 	});
 
 	it('No valid links', async () => {
@@ -58,9 +58,9 @@ describe('#IsInvitation.online', () => {
 		expect(result.code).toBe(null);
 		expect(result.isInvitation).toBe(false);
 		expect(result.message).toBe('No valid links found');
-		expect(result.url).toBe(text);
-		expect(result.invitationCode).toBe(null);
-		expect(result.discordResponse).toBe(null);
+		expect(result.url).toBe(null);
+		expect(result.invitationCode).toBe(undefined);
+		expect(result.discordResponse).toBe(undefined);
 	});
 
 	it('Zero-width space', async () => {
