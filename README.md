@@ -24,10 +24,10 @@ npm install is-discord-invite
 
 ## 🤔 » Table
 
-| Function | Async/await | Options                    | Validation                     | Faster method | Reliability | Recommended |
-|----------|:------------|----------------------------|:-------------------------------|---------------|-------------|:------------|
-| regex    | No          | [View](#regextext-options) | [Regex](grex.md)               | ✅             | ❌           | ❌           |
-| online   | Yes         | [View](#onlinetext)        | [API](https://api.sefinek.net) | ❌             | ✅           | ✅           |
+| Function | Async/await | Options                      | Validation                                 | Faster method | Reliability | Recommended |
+|----------|:------------|------------------------------|:-------------------------------------------|---------------|-------------|:------------|
+| regex    | No          | [View](#regextext--options-) | [Regex](grex.md)                           | ✅             | ❌           | ❌           |
+| online   | Yes         | [View](#onlinemessage)       | [API](https://discord.com/api/v10/invites) | ❌             | ✅           | ✅           |
 
 
 ## 🌍 API
