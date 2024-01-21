@@ -31,7 +31,7 @@ npm install is-discord-invite
 
 
 ## 🌍 API
-### `regex(text, { options })`
+### `regex(message, { options })`
 Checks if the given string contains Discord server invitations. Validation is based solely on the string itself.
 In this case, the script does NOT verify whether the link is actually associated with a server.
 
@@ -51,7 +51,7 @@ If no options are provided, the `everything` option will be set to `true`, meani
 ### `online(message)`
 Checks for valid Discord invitation links in the provided text and fetches invitation data.
 
-- `text` (string): The input text to search for Discord invitation links.
+- `message` (string): The input text to search for Discord invitation links.
 
 > **Returns** (object): A Promise that resolves to an object with invitation data.
 
