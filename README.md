@@ -53,7 +53,7 @@ Checks for valid Discord invitation links in the provided text and fetches invit
 
 - `message` (string): The input text to search for Discord invitation links.
 
-> **Returns** (object): A Promise that resolves to an object with invitation data.
+> **Returns** ([object](#invitation-data)): A Promise that resolves to an object with invitation data.
 
 
 ### Invitation Data
