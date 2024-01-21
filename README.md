@@ -31,30 +31,12 @@ npm install is-discord-invite
 
 
 ## 🌍 API
-### `regex(message, { options })`
-Checks if the given string contains Discord server invitations. Validation is based solely on the string itself.
-In this case, the script does NOT verify whether the link is actually associated with a server.
-
-- `message` (string): The input string to be checked.
-- `options` (object, optional): An options object for customizing the behavior. You can customize which types of Discord server invitation links to check by setting specific options to `true` or `false`. Available options include:
-    - `defaultDiscordUrls` (boolean, default `false`): Check default Discord invitation URLs.
-    - `otherDiscordUrls` (boolean, default `false`): Checks other domains created by Discord Inc. that redirect to discord.com/*.
-    - `disboard` (boolean, default `false`): Checks URL addresses associated with the **disboard.org** website.
-    - `discordMe` (boolean, default `false`): Checks URL addresses associated with the **discord.me** website.
-    - `discordhome` (boolean, default `false`): Checks URL addresses associated with the **discordhome.com** website.
-
-If no options are provided, the `everything` option will be set to `true`, meaning that all types of Discord server invitation links will be checked.
-
-> **Returns** (boolean): `true` if the input is a valid Discord server invitation link, `false` otherwise.
-
-
 ### `online(message)`
 Checks for valid Discord invitation links in the provided text and fetches invitation data.
 
 - `message` (string): The input text to search for Discord invitation links.
 
 > **Returns** ([object](#invitation-data)): A Promise that resolves to an object with invitation data.
-
 
 ### Invitation Data
 If a valid invitation link is found, the returned data will have the following structure:
@@ -117,9 +99,24 @@ In case the invitation was not valid 100%:
 }
 ```
 
+### `regex(message, { options })`
+Checks if the given string contains Discord server invitations. Validation is based solely on the string itself.
+In this case, the script does NOT verify whether the link is actually associated with a server.
+
+- `message` (string): The input string to be checked.
+- `options` (object, optional): An options object for customizing the behavior. You can customize which types of Discord server invitation links to check by setting specific options to `true` or `false`. Available options include:
+    - `defaultDiscordUrls` (boolean, default `false`): Check default Discord invitation URLs.
+    - `otherDiscordUrls` (boolean, default `false`): Checks other domains created by Discord Inc. that redirect to discord.com/*.
+    - `disboard` (boolean, default `false`): Checks URL addresses associated with the **disboard.org** website.
+    - `discordMe` (boolean, default `false`): Checks URL addresses associated with the **discord.me** website.
+    - `discordhome` (boolean, default `false`): Checks URL addresses associated with the **discordhome.com** website.
+
+If no options are provided, the `everything` option will be set to `true`, meaning that all types of Discord server invitation links will be checked.
+
+> **Returns** (boolean): `true` if the input is a valid Discord server invitation link, `false` otherwise.
+
 
 ## 📄 » Examples
-
 ### 🔡 Regex
 Quick method, but definitely not recommended for most cases. `isInvitation` will be `true` even if the invitation has expired or simply doesn't work.
 
