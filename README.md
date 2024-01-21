@@ -117,6 +117,22 @@ If no options are provided, the `everything` option will be set to `true`, meani
 
 
 ## 📄 » Examples
+### 🧪 Online
+In this case, `isInvitation` will be `true` due to the link with the code `HjEyuee4mc`, as it is the only valid one.
+
+```js
+const IsInvitation = require('is-discord-invite');
+
+(async () => {
+    const result = await IsInvitation.online(
+        'Lorem ipsum dolor sit amet, https://discord.gg/notValid consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna https://discord.gg/HjEyuee4mc aliqua.",
+    );
+
+    console.log(result.isInvitation); // true
+})();
+```
+If the regex detects any invitation, the script sends a [POST request](https://en.wikipedia.org/wiki/POST_(HTTP)) to the [API](https://en.wikipedia.org/wiki/API) to verify the link's validity.
+
 ### 🔡 Regex
 Quick method, but definitely not recommended for most cases. `isInvitation` will be `true` even if the invitation has expired or simply doesn't work.
 
@@ -132,22 +148,6 @@ console.log(result2); // true
 const result3 = IsInvitation.regex('https://example.com/bKzhAdd6Fa');
 console.log(result3); // false
 ```
-
-### 🧪 Online
-In this case, `isInvitation` will be `true` due to the link with the code `HjEyuee4mc`, as it is the only valid one.  
-
-```js
-const IsInvitation = require('is-discord-invite');
-
-(async () => {
-    const result = await IsInvitation.online(
-        'Lorem ipsum dolor sit amet, https://discord.gg/notValid consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna https://discord.gg/HjEyuee4mc aliqua.",
-    );
-
-    console.log(result.isInvitation); // true
-})();
-```
-If the regex detects any invitation, the script sends a [POST request](https://en.wikipedia.org/wiki/POST_(HTTP)) to the [API](https://en.wikipedia.org/wiki/API) to verify the link's validity.
 
 
 ## 🤝 » Help
