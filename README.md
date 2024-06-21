@@ -24,14 +24,14 @@ npm install is-discord-invite
 
 ## 🤔 » Table
 
-| Function | Async/await | Options                      | Validation                                 | Faster method | Reliability | Recommended |
-|----------|:------------|------------------------------|:-------------------------------------------|---------------|-------------|:------------|
-| online   | Yes         | [View](#onlinemessage)       | [API](https://discord.com/api/v10/invites) | ❌             | ✅           | ✅           |
-| regex    | No          | [View](#regextext--options-) | [Regex](grex.md)                           | ✅             | ❌           | ❌           |
+| Function | Async/await | Options         | Validation                                 | Faster method | Reliability | Recommended |
+|----------|:------------|-----------------|:-------------------------------------------|---------------|-------------|:------------|
+| online   | Yes         | [View](#online) | [API](https://discord.com/api/v10/invites) | ❌             | ✅           | ✅           |
+| regex    | No          | [View](#regex)  | [Regex](grex.md)                           | ✅             | ❌           | ❌           |
 
 
 ## 🌍 API
-### `online(message)`
+### `online(message)` <div id="online"></div>
 Checks for valid Discord invitation links in the provided text and fetches invitation data.
 
 - `message` (string): The input text to search for Discord invitation links.
@@ -99,7 +99,7 @@ In case the invitation was not valid 100%:
 }
 ```
 
-### `regex(message, { options })`
+### `regex(message, { options })` <div id="regex"></div>
 Checks if the given string contains Discord server invitations. Validation is based solely on the string itself.
 In this case, the script does NOT verify whether the link is actually associated with a server.
 
