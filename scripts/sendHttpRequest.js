@@ -14,7 +14,7 @@ const headers = {
 	'Referrer-Policy': 'strict-origin-when-cross-origin',
 	'X-Content-Type-Options': 'nosniff',
 	'X-Frame-Options': 'DENY',
-	'X-XSS-Protection': '1; mode=block',
+	'X-XSS-Protection': '1; mode=block'
 };
 
 const extractCode = discordLink => {
@@ -74,10 +74,10 @@ module.exports = async url => {
 			url: {
 				full: url,
 				invitationCode: invitation,
-				fetchedCode: res.data.code || {},
+				fetchedCode: res.data.code || {}
 			},
 			inviter: res.data.inviter || {},
-			guild: res.data.guild || {},
+			guild: res.data.guild || {}
 		};
 	} catch (err) {
 		const status = err.response ? err.response.status : undefined;
