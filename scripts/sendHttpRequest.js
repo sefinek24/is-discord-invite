@@ -6,15 +6,8 @@ const headers = {
 	'Accept': 'application/json',
 	'Content-Type': 'application/json',
 	'Cache-Control': 'no-cache',
-	'CF-IPCountry': 'false',
-	'CF-Visitor': '{"scheme":"https"}',
 	'Connection': 'keep-alive',
-	'DNT': '1',
-	'Pragma': 'no-cache',
-	'Referrer-Policy': 'strict-origin-when-cross-origin',
-	'X-Content-Type-Options': 'nosniff',
-	'X-Frame-Options': 'DENY',
-	'X-XSS-Protection': '1; mode=block'
+	'DNT': '1'
 };
 
 const extractCode = discordLink => {
@@ -24,6 +17,7 @@ const extractCode = discordLink => {
 
 		return pathname.startsWith('/invite/') ? pathname.substring('/invite/'.length) : pathname.substring(1);
 	} catch (err) {
+		console.error(err);
 		return null;
 	}
 };
@@ -42,7 +36,7 @@ const httpRequest = (url, options) => {
 					const parsedData = JSON.parse(data);
 					resolve({ data: parsedData, statusCode: res.statusCode });
 				} catch (err) {
-					resolve({ data, statusCode: res.statusCode });
+					reject(err);
 				}
 			});
 		});
@@ -80,7 +74,6 @@ module.exports = async url => {
 			guild: res.data.guild || {}
 		};
 	} catch (err) {
-		const status = err.response ? err.response.status : undefined;
-		return { success: false, code: status, isInvitation: false, message: err.message, url: {}, inviter: null, guild: null };
+		return { success: false, code: err.response?.status || undefined, isInvitation: false, message: err.message, url: {}, inviter: null, guild: null };
 	}
 };
